@@ -233,6 +233,7 @@ module RiCal
         export_properties_to(export_stream)
         export_x_properties_to(export_stream)
         export_required_timezones(export_stream)
+        export_stream.puts("X-MS-OLK-FORCEINSPECTOROPEN:TRUE")
         export_subcomponent_to(export_stream, events)
         export_subcomponent_to(export_stream, todos)
         export_subcomponent_to(export_stream, journals)
